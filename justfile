@@ -1,3 +1,6 @@
+pull-submodule:
+  git submodule update --init --recursive --depth 1
+
 watch-cv:
   typst watch ./cv.typ ./output/CV.pdf --font-path ./src/fonts/ 
 

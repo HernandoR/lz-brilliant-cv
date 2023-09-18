@@ -4,18 +4,48 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Compile cv",
+      "label": "Compile-cv",
       "type": "shell",
-      "command": "./scripts/test.sh",
-      "windows": {
-        "command": ".\\scripts\\test.cmd"
+      "options": {
+        "cwd": "${workspaceFolder}"
       },
-      "group": "test",
+      "command": "typst",
+      "args": [
+        "compile",
+        "./cv.typ",
+        "./output/CV.pdf",
+        "--font-path",
+        "./src/fonts/"
+      ],
+      "group": "build",
       "presentation": {
-        "reveal": "always",
-        "panel": "new"
+        "reveal":"silent",
+        "revealProblems": "onProblem",
+        "panel": "shared"
       }
-    }
+    },
+    {
+      "label": "Compile-letter",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "command": "typst",
+      "args": [
+        "compile",
+        "./letter.typ",
+        "./output/letter.pdf",
+        "--font-path",
+        "./src/fonts/"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal":"silent",
+        "revealProblems": "onProblem",
+        "panel": "shared"
+      }
+    },
+
   ]
 }
   
