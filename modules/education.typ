@@ -3,27 +3,30 @@
 #cvSection("Education")
 
 #cvEntry(
-    title: [Master of Electronics],
+    title: [Master of Science, Electronics],
     society: [Nanyang Technological University],
     date: [2022 - 2024],
     location: [Singapore],
     logo: "../src/logos/NTU.png",
     description: list(
-      [Thesis: Decentrolized SLAM Swarm],
-      [Course: Big Data Systems and Technologies #hBar() 
-      Data Mining and Exploration #hBar() 
-      Natural Language Processing]
+      [Dissertation: Decentrolized SLAM Swarm],
+      [Course: RF Circuit for Wireless Communication #hBar() 
+      EMC DESIGN	#hBar() 
+      Genetic Algorithms & Machine Learning]
     )
 )
 
 #cvEntry(
-    title: [Bachelors of Engineering in Electronical Information Engineering],
-    society: [Wuhan University of Science and Technology, Hubei],
+    title: [Bachelors of Engineering, Electronical Information Engineering],
+    society: [Wuhan University of Science and Technology],
     date: [2018 - 2022],
-    location: [China],
-    logo: "../src/logos/ucla.png",
+    location: [Hubei, China],
+    logo: "../src/logos/wust.png",
     description: list(
-      [Thesis: Exploring the Use of Machine Learning Algorithms for Predicting Stock Prices: A Comparative Study of Regression and Time-Series Models],
-      [Course: Database Systems #hBar() Computer Networks #hBar() Software Engineering #hBar() Artificial Intelligence]
+      [Thesis: Implementation of multi-threaded distributed SLAM system in outdoor environment],
+      [Course: Digital System Design (Verilog HDL) #hBar()
+        Probability and Mathematical Statistics #hBar()
+        Digital Signal Processing]
+
     )
 )

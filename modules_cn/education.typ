@@ -3,25 +3,30 @@
 #cvSection("Education")
 
 #cvEntry(
-    title: [Master of Data Science],
-    society: [University of California, Los Angeles],
-    date: [2018 - 2020],
-    location: [USA],
-    logo: "../src/logos/ucla.png",
+    title: [理学硕士, 电子学],
+    society: [新加坡南洋理工大学],
+    date: [2022 - 2024],
+    location: [新加坡],
+    logo: "../src/logos/NTU.png",
     description: list(
-      [Thesis: Predicting Customer Churn in Telecommunications Industry using Machine Learning Algorithms and Network Analysis],
-      [Course: Big Data Systems and Technologies #hBar() Data Mining and Exploration #hBar() Natural Language Processing]
+      [毕业论文: 去中心化隐私保护的SLAM集群],
+      [Course: 射频通信电路 #hBar() 
+      电磁兼容设计 #hBar() 
+      遗传算法与机器学习]
     )
 )
 
 #cvEntry(
-    title: [Bachelors of Science in Computer Science],
-    society: [University of California, Los Angeles],
-    date: [2018 - 2020],
-    location: [USA],
-    logo: "../src/logos/ucla.png",
+    title: [工学学士, 电子信息工程],
+    society: [武汉科技大学],
+    date: [2018 - 2022],
+    location: [中国, 湖北],
+    logo: "../src/logos/wust.png",
     description: list(
-      [Thesis: Exploring the Use of Machine Learning Algorithms for Predicting Stock Prices: A Comparative Study of Regression and Time-Series Models],
-      [Course: Database Systems #hBar() Computer Networks #hBar() Software Engineering #hBar() Artificial Intelligence]
+      [毕业设计: 室外环境下多线程分布式SLAM系统的实现],
+      [C数字系统设计(Verilog HDL) #hBar() 
+      无线通信 #hBar() 
+      概率统计 #hBar() 
+      信号处理]
     )
 )
