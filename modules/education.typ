@@ -3,11 +3,11 @@
 #cvSection("Education")
 
 #cvEntry(
-    title: [Master of Data Science],
-    society: [University of California, Los Angeles],
-    date: [2018 - 2020],
-    location: [USA],
-    logo: "../src/logos/ucla.png",
+    title: [Master of Electronics],
+    society: [Nanyang Technological University],
+    date: [2022 - 2024],
+    location: [Singapore],
+    logo: "../src/logos/NTU.png",
     description: list(
       [Thesis: Decentrolized SLAM Swarm],
       [Course: Big Data Systems and Technologies #hBar() 
