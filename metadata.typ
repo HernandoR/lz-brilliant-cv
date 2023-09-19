@@ -2,7 +2,8 @@
 
 // Change this variable to control output language & cited module
 // INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
-#let varLanguage = "" 
+#let varVersion = "" 
+#let varLanguage = "zh"
 
 #let firstName = "Liu"
 #let lastName = "Zhen"
@@ -21,6 +22,13 @@
   "": [Master student with financial background looking for a full time job starting from now],
   "en": [Master student with financial background looking for a full time job starting from now],
   "zh": [具有财务经验的STEM硕士生, 寻找全职工作]
+)
+
+#let nonLatinOverwriteInfo = (
+  "customFont": "Heiti SC",
+  "firstName": "刘朕",
+  "lastName": "",
+  // submit an issue if you think other variables should be in this array
 )
 
 /* Layout Setting */
