@@ -35,6 +35,8 @@
   }
 }
 
+
+
 #let languageSwitch(dict) = {
   for (k, v) in dict {
     if k == varLanguage {
@@ -45,6 +47,21 @@
   panic("i18n: language value not matching any key in the array")
 }
 
+#let i18nSW(dict) = {
+  let res = (:)
+  // work on the cv entry wide
+  for (k, v) in dict {
+    if type(v) != dictionary {
+      // single language value i.e. icon path
+      res.insert(k,v)
+    }
+    else {
+      // multiple language values i.e. cv entry
+      res.insert(k, languageSwitch(v))
+    }
+  }
+  return res
+}
 /* Styles */
 #let fontList = ("Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
 
@@ -85,13 +102,13 @@
 )}
 
 #let headerInfoStyle(str) = {text(
-  size: 10pt,
+  size: 12pt,
   fill: accentColor,
   str
 )}
 
 #let headerQuoteStyle(str) = {text(
-  size: 10pt,
+  size: 12pt,
   weight: "medium",
   style: "italic",
   fill: accentColor,
@@ -106,7 +123,7 @@
 )}
 
 #let entryA1Style(str) = {text(
-  size: 10pt,
+  size: 12pt,
   weight: "bold",
   str
 )}
@@ -120,14 +137,14 @@
 ))}
 
 #let entryB1Style(str) = {text(
-  size: 8pt,
+  size: 10pt,
   fill: accentColor,
   weight: "medium",
   smallcaps(str)
 )}
 
 #let entryB2Style(str) = {align(right, text(
-  size: 8pt,
+  size: 10pt,
   weight: "medium",
   fill: gray,
   style: "oblique",
@@ -143,7 +160,7 @@
 )}
 
 #let skillTypeStyle(str) = {align(right, text(
-  size: 10pt,
+  size: 12pt,
   weight: "bold",
   str))
 }
@@ -177,7 +194,7 @@
 )}
 
 #let footerStyle(str) = {text(
-  size: 8pt,
+  size: 10pt,
   fill: rgb("#999999"),
   smallcaps(str)
 )}
@@ -359,7 +376,7 @@
   table(
     columns: (16%, 1fr),
     inset: 0pt,
-    column-gutter: 10pt,
+    column-gutter: 12pt,
     stroke: none,
     skillTypeStyle(type),
     skillInfoStyle(info),
@@ -374,18 +391,21 @@
   location: ""
 ) = {
   table(
-    columns: (16%, 1fr, 15%),
+    columns: (16%, 1fr,25%, 15%),
     inset: 0pt,
-    column-gutter: 10pt,
+    column-gutter: 12pt,
     align: horizon,
     stroke: none,
     honorDateStyle(date),
-    if issuer == "" {
-      honorTitleStyle(title)
-    } else [
-      #honorTitleStyle(title), #honorIssuerStyle(issuer)
-    ],
-    honorLocationStyle(location)
+    honorTitleStyle(title),
+    honorIssuerStyle(issuer),
+    honorLocationStyle(location),
+    // if issuer == "" {
+    //   honorTitleStyle(title)
+    // } else [
+    //   #honorTitleStyle(title), #honorIssuerStyle(issuer)
+    // ],
+    // honorLocationStyle(location)
   )
   v(-6pt)
 }

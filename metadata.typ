@@ -3,7 +3,7 @@
 // Change this variable to control output language & cited module
 // INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
 #let varVersion = "" 
-#let varLanguage = "zh"
+#let varLanguage = "en"
 
 #let firstName = "Liu"
 #let lastName = "Zhen"
