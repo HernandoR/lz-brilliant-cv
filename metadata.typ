@@ -3,13 +3,13 @@
 // Change this variable to control output language & cited module
 // INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
 #let varVersion = "" 
-#let varLanguage = "en"
+#let varLanguage = "zh"
 
-#let firstName = "Liu"
-#let lastName = "Zhen"
+#let firstName = "Zhen"
+#let lastName = "Liu"
 #let personalInfo = (
   github: "HernandoR",
-  phone: "+65 8884 3589",
+  phone: "+86 15671190677",
   email: "zliu046@e.ntu.edu.sg",
   linkedin: "liuzhen23",
   //gitlab: "mintyfrankie",
@@ -20,12 +20,12 @@
 )
 #let headerQuoteInternational = (
   "": [Master student with financial background looking for a full time job starting from now],
-  "en": [Master student with financial background looking for a full time job starting from now],
-  "zh": [具有财务经验的STEM硕士生, 寻找全职工作]
+  "en": [Master student with Machine Learning background looking for a full time job starting from now],
+  "zh": [寻找全职工作]
 )
 
 #let nonLatinOverwriteInfo = (
-  "customFont": "Heiti SC",
+  "customFont": "FangSong_GB2312",
   "firstName": "刘朕",
   "lastName": "",
   // submit an issue if you think other variables should be in this array

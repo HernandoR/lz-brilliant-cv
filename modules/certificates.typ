@@ -18,12 +18,12 @@
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2023.06],
-    title: [Silver Prize in Kaggle competition (Top 10%)],
+    title: [Silver Prize in Kaggle competition (*Top 10%*)],
     issuer: [Kaggle]
   ),
   "zh":(
     date: [2023.06],
-    title: [Kaggle银牌(Top 10%)],
+    title: [Kaggle银牌(*Top 10%*)],
     issuer: [Kaggle]
   )
 )))
@@ -31,12 +31,12 @@
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2023.06],
-    title: [Registered Consultant of Worldquant (Top 5% in IQC)],
+    title: [Registered Consultant of Worldquant (*Top 5% in IQC*)],
     issuer: [Worldquant]
   ),
   "zh":(
     date: [2023.06],
-    title: [Worldquant 注册顾问 (Top 5% in IQC)],
+    title: [Worldquant 注册顾问 (*Top 5% in IQC*)],
     issuer: [Worldquant]
   )
 )))
@@ -44,12 +44,12 @@
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2023.05],
-    title: [Gold Level in Worldquant Challenge (Top 5%)],
+    title: [Gold Level in Worldquant Challenge (*Top 5%*)],
     issuer: [Worldquant]
   ),
   "zh":(
     date: [2023.05],
-    title: [Worldquant Challenge 金牌 (Top 5%)],
+    title: [Worldquant Challenge 金牌 (*Top 5%*)],
     issuer: [Worldquant]
   )
 )))
@@ -58,7 +58,7 @@
   "en":( 
     date: [2022.06],
     title: [First Prize in National Extracurricular Academic Competition],
-    issuer: [Ministry of Education of the People's Republic of China]
+    issuer: [*Ministry of Education of China*]
   ),
   "zh":(
     date: [2022.06],
@@ -70,12 +70,12 @@
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2021.04],
-    title: [Meritorious Winner in Interdisciplinary Contest in Modeling (Top 5%)],
+    title: [Meritorious Winner in Interdisciplinary Contest in Modeling (*Top 5%*)],
     issuer: [COMAP]
   ),
   "zh":(
     date: [2021.04],
-    title: [交叉学科数学建模竞赛M奖(Top 5%)],
+    title: [交叉学科数学建模竞赛M奖(*Top 5%*)],
     issuer: [数学及其应用联合会]
   )
 )))
@@ -97,7 +97,7 @@
   "en":( 
     date: [2020.06],
     title: [First Prize in Mathematical Contest in Modeling],
-    issuer: [Wuhan University of Science and Technology]
+    issuer: [WUST]
   ),
   "zh":(
     date: [2020.06],
@@ -109,12 +109,12 @@
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2020.04],
-    title: [Finalist In Interdisciplinary Contest in Modeling (Top 1%)],
+    title: [Finalist In Interdisciplinary Contest in Modeling (*Top 1%*)],
     issuer: [COMAP]
   ),
   "zh":(
     date: [2020.04],
-    title: [交叉学科数学建模竞赛特等奖提名(Top 1%)],
+    title: [交叉学科数学建模竞赛特等奖提名(*Top 1%*)],
     issuer: [数学及其应用联合会]
   )
 )))
@@ -147,7 +147,7 @@
 // #cvHonor(
 //   date: [2022],
 //   title: [AWS Certified Security],
-//   issuer: [Amazon Web Services (AWS)],
+//   issuer: [Amazon Web Services (*AWS*)],
 // )
 
 // #cvHonor(

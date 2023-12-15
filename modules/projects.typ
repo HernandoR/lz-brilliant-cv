@@ -163,7 +163,7 @@
 #cvEntry(..languageSwitch((
   "en": (
     title: [Research on Quantification and Prediction of Music Evolution],
-    society: [ICM 数学竞赛,全球],
+    society: [Interdisciplinary Contest in Modeling, World-wide],
     date: [04/2021],
     location: [Wuhan, China],
     description: list(

@@ -6,6 +6,20 @@
 #import "../metadata.typ": *
 #import "@preview/fontawesome:0.1.0": *
 
+/* font size */
+#let TitleFontSize = 32pt
+
+#let LargeFontSize = 16pt
+// #let BigFontSize= 14pt
+#let RegularFontSize = 12pt
+#let SmallFontSize = 10pt
+// #let TinyFontSize = 8pt
+
+#let LargeGap = 6pt
+#let RegularGap = 5pt
+#let SmallGap = 4pt
+
+#let TinyGap = 1pt
 
 /* Language-specific Macros */
 #let nonLatinOverwrite = false
@@ -23,7 +37,7 @@
 
 /* Utility Functions */
 #let hBar() = [
-  #h(5pt) | #h(5pt)
+  #h(RegularGap) | #h(RegularGap)
 ]
 
 #let autoImport(file) = {
@@ -63,9 +77,9 @@
   return res
 }
 /* Styles */
-#let fontList = ("Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
+#let fontList = ("Times New Roman","Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
 
-#let headerFont = ("Roboto", nonLatinFont)
+#let headerFont = ("Times New Roman","Roboto", nonLatinFont)
 
 #let awesomeColors = (
   skyblue: rgb("#0395DE"),
@@ -82,13 +96,13 @@
 
 #let accentColor = awesomeColors.at(awesomeColor)
 
-#let beforeSectionSkip = 1pt
-#let beforeEntrySkip = 1pt
-#let beforeEntryDescriptionSkip = 1pt
+#let beforeSectionSkip = TinyGap
+#let beforeEntrySkip = TinyGap
+#let beforeEntryDescriptionSkip = TinyGap
 
 #let headerFirstNameStyle(str) = {text(
   font: headerFont,
-  size: 32pt,
+  size: TitleFontSize,
   weight: "light",
   fill: regularColors.darkgray,
   str
@@ -96,19 +110,19 @@
 
 #let headerLastNameStyle(str) = {text(
   font: headerFont,
-  size: 32pt,
+  size: TitleFontSize,
   weight: "bold",
   str
 )}
 
 #let headerInfoStyle(str) = {text(
-  size: 12pt,
+  size: RegularFontSize,
   fill: accentColor,
   str
 )}
 
 #let headerQuoteStyle(str) = {text(
-  size: 12pt,
+  size: RegularFontSize,
   weight: "medium",
   style: "italic",
   fill: accentColor,
@@ -116,14 +130,14 @@
 )}
 
 #let sectionTitleStyle(str, color:black) = {text(
-  size: 16pt, 
+  size: LargeFontSize, 
   weight: "bold", 
   fill: color,
   str
 )}
 
 #let entryA1Style(str) = {text(
-  size: 12pt,
+  size: RegularFontSize,
   weight: "bold",
   str
 )}
@@ -137,14 +151,14 @@
 ))}
 
 #let entryB1Style(str) = {text(
-  size: 10pt,
+  size: SmallFontSize,
   fill: accentColor,
   weight: "medium",
   smallcaps(str)
 )}
 
 #let entryB2Style(str) = {align(right, text(
-  size: 10pt,
+  size: SmallFontSize,
   weight: "medium",
   fill: gray,
   style: "oblique",
@@ -160,7 +174,7 @@
 )}
 
 #let skillTypeStyle(str) = {align(right, text(
-  size: 12pt,
+  size: RegularFontSize,
   weight: "bold",
   str))
 }
@@ -174,7 +188,7 @@
 }
 
 #let honorTitleStyle(str) = {text(
-  weight: "bold",
+  // weight: "bold",
   str
 )}
 
@@ -194,7 +208,7 @@
 )}
 
 #let footerStyle(str) = {text(
-  size: 10pt,
+  size: SmallFontSize,
   fill: rgb("#999999"),
   smallcaps(str)
 )}
@@ -249,7 +263,7 @@
           hBar()
         }
         // Adds icons
-        personalInfoIcons.at(k) + h(5pt)
+        personalInfoIcons.at(k) + h(RegularGap)
         // Adds hyperlinks
         if k == "email" {
           link("mailto:" + v)[#v]
@@ -278,7 +292,7 @@
     inset: 0pt,
     stroke: none,
     row-gutter: 6mm,
-    [#headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(lastName)],
+    [#headerFirstNameStyle(firstName) #h(RegularGap) #headerLastNameStyle(lastName)],
     [#headerInfoStyle(makeHeaderInfo())],
     [#headerQuoteStyle(languageSwitch(headerQuoteInternational))]
   )
@@ -358,7 +372,7 @@
       columns: (1fr, auto),
       inset: 0pt,
       stroke: none,
-      row-gutter: 6pt,
+      row-gutter: LargeGap,
       align: auto,
       {entryA1Style(ifSocietyFirst(varEntrySocietyFirst, society, title))},
       {entryA2Style(date)},
@@ -376,12 +390,12 @@
   table(
     columns: (16%, 1fr),
     inset: 0pt,
-    column-gutter: 12pt,
+    column-gutter: RegularFontSize,
     stroke: none,
     skillTypeStyle(type),
     skillInfoStyle(info),
   )
-  v(-6pt)
+  v(-LargeGap)
 }
 
 #let cvHonor(
@@ -391,15 +405,14 @@
   location: ""
 ) = {
   table(
-    columns: (16%, 1fr,25%, 15%),
+    columns: (16%, 1fr,25%),
     inset: 0pt,
-    column-gutter: 12pt,
+    column-gutter: RegularFontSize,
     align: horizon,
     stroke: none,
     honorDateStyle(date),
     honorTitleStyle(title),
-    honorIssuerStyle(issuer),
-    honorLocationStyle(location),
+    [#honorIssuerStyle(issuer) #honorLocationStyle(location)],
     // if issuer == "" {
     //   honorTitleStyle(title)
     // } else [
@@ -407,7 +420,7 @@
     // ],
     // honorLocationStyle(location)
   )
-  v(-6pt)
+  v(-LargeGap)
 }
 
 #let cvPublication(
@@ -445,15 +458,15 @@
   subject: "Subject: Hey!"
 ) = {
   letterHeaderNameStyle(firstName + " " + lastName)
-  v(1pt)
+  v(TinyGap)
   letterHeaderAddressStyle(myAddress)
-  v(1pt)
+  v(TinyGap)
   align(right, letterHeaderNameStyle(recipientName))
-  v(1pt)
+  v(TinyGap)
   align(right, letterHeaderAddressStyle(recipientAddress))
-  v(1pt)
+  v(TinyGap)
   letterDateStyle(date)
-  v(1pt)
+  v(TinyGap)
   letterSubjectStyle(subject)
   linebreak(); linebreak()
 }
@@ -482,7 +495,7 @@
   set text(
     font: fontList,
     weight: "regular",
-    size: 9pt,
+    size: RegularFontSize,
   )
   set align(left)
   set page(
