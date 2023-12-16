@@ -100,6 +100,12 @@
 #let beforeEntrySkip = TinyGap
 #let beforeEntryDescriptionSkip = TinyGap
 
+#let cvHighlight(str) = {text(
+  weight: "bold",
+  fill: accentColor,
+  str
+)}
+
 #let headerFirstNameStyle(str) = {text(
   font: headerFont,
   size: TitleFontSize,

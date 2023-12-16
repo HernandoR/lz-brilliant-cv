@@ -110,7 +110,7 @@
 
 #cvEntry(..languageSwitch((
   "en": (
-    title: [ORB-SLAM2 Based Distributed SLAM | Undergraduate Thesis],
+    title: [ORB-SLAM2 Based Distributed SLAM],
     society: [Undergraduate Thesis],
     date: [02/2022 - 06/2022],
     location: [Wuhan, China],
@@ -121,7 +121,7 @@
     )
   ),
   "zh": (
-    title: [基于ORB与ROS的分布式SLAM | 本科毕业设计],
+    title: [基于ORB与ROS的分布式SLAM],
     society: [本科毕业设计],
     date: [02/2022 - 06/2022],
     location: [中国武汉],
@@ -147,7 +147,7 @@
     )
   ),
   "zh": (
-    title: [基于机器视觉反馈的FDM 3D打印机 | National Innovation Training Program],
+    title: [基于机器视觉反馈的FDM 3D打印机],
     society: [国家级创新训练计划],
     date: [06/2020 - 06/2021],
     location: [中国上海],

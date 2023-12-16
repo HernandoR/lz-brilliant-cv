@@ -25,7 +25,8 @@
 )
 
 #let nonLatinOverwriteInfo = (
-  "customFont": "FangSong_GB2312",
+  // "customFont": "FangSong_GB2312",
+  "customFont": "FiraMonoNerdFont",
   "firstName": "刘朕",
   "lastName": "",
   // submit an issue if you think other variables should be in this array

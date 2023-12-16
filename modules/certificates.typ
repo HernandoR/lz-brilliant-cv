@@ -58,12 +58,12 @@
   "en":( 
     date: [2022.06],
     title: [First Prize in National Extracurricular Academic Competition],
-    issuer: [*Ministry of Education of China*]
+    issuer: [*#cvHighlight("Ministry of Education of China")*]
   ),
   "zh":(
     date: [2022.06],
     title: [挑战杯全国课外学术作品竞赛二等奖],
-    issuer: [中华人民共和国教育部]
+    issuer: [*#cvHighlight("中华人民共和国教育部")*]
   )
 )))
 
