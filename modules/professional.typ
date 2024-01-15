@@ -1,30 +1,30 @@
 #import "../brilliant-CV/template.typ": *
 
-#cvSection("Professional Experience")
+// #cvSection("Professional Experience")
 
-#cvEntry(..languageSwitch((
-  "en": (
-    title: [ Applied Scientist Intern ],
-    society: [ Amazon Web Services ],
-    date: [ 2023.12 - 2024.05],
-    location: [ Shanghai, China ],
-    description: list(
-      [],
-    ),
-    logo: "../src/logos/aws.png",
-  ),
-  
-  "zh": (
-    title: [ 应用科学家实习生 ],
-    society: [ 亚马逊云科技 ],
-    date: [ 2023.12 - 2024.05],
-    location: [ 上海, 中国 ],
-    description: list(
-      [],
-    ),
-    logo: "../src/logos/aws.png",
-  )
-)))
+// #cvEntry(..languageSwitch((
+//   "en": (
+//     title: [ Applied Scientist Intern ],
+//     society: [ Amazon Web Services ],
+//     date: [ 2023.12 - 2024.05],
+//     location: [ Shanghai, China ],
+//     description: list(
+//       [],
+//     ),
+//     logo: "../src/logos/aws.png",
+//   ),
+
+//   "zh": (
+//     title: [ 应用科学家实习生 ],
+//     society: [ 亚马逊云科技 ],
+//     date: [ 2023.12 - 2024.05],
+//     location: [ 上海, 中国 ],
+//     description: list(
+//       [],
+//     ),
+//     logo: "../src/logos/aws.png",
+//   )
+// )))
 
 // #cvEntry(..i18nSW((
 //   title:(
