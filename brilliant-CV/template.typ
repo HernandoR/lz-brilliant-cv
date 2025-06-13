@@ -77,9 +77,9 @@
   return res
 }
 /* Styles */
-#let fontList = ("Times New Roman","Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
+#let fontList = ("FiraCodeNerdFont", "Times New Roman","Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
 
-#let headerFont = ("Times New Roman","Roboto", nonLatinFont)
+#let headerFont = ("FiraCodeNerdFont","Times New Roman","Roboto", nonLatinFont)
 
 #let awesomeColors = (
   skyblue: rgb("#0395DE"),

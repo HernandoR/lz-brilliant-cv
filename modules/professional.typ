@@ -1,30 +1,34 @@
 #import "../brilliant-CV/template.typ": *
 
-// #cvSection("Professional Experience")
+#cvSection("Professional Experience")
 
-// #cvEntry(..languageSwitch((
-//   "en": (
-//     title: [ Applied Scientist Intern ],
-//     society: [ Amazon Web Services ],
-//     date: [ 2023.12 - 2024.05],
-//     location: [ Shanghai, China ],
-//     description: list(
-//       [],
-//     ),
-//     logo: "../src/logos/aws.png",
-//   ),
+#cvEntry(..languageSwitch((
+  "en": (
+    title: [ Algorithm Engineer ],
+    society: [ Xiaomi Corporation],
+    date: [ 2024.07 - now],
+    location: [ Wuhan, China ],
+    description: list(
+      [Training multi-modal point cloud models on multiple GPUs],
+      [Visual semantic segmentation model training],
+      [Keywords: 3D reconstruction, machine learning, deep learning, algorithm optimization]
+    ),
+    logo: "../src/logos/xiaomi.png",
+  ),
 
-//   "zh": (
-//     title: [ 应用科学家实习生 ],
-//     society: [ 亚马逊云科技 ],
-//     date: [ 2023.12 - 2024.05],
-//     location: [ 上海, 中国 ],
-//     description: list(
-//       [],
-//     ),
-//     logo: "../src/logos/aws.png",
-//   )
-// )))
+  "zh": (
+    title: [ 算法工程师 ],
+    society: [ 小米科技 ],
+    date: [ 2024.07 - 至今],
+    location: [ 武汉, 中国 ],
+    description: list(
+      [在多GPU上训练多模态点云模型],
+      [视觉语义分割模型训练],
+      [Keywords: 3D重建, 机器学习, 深度学习, 算法优化]
+    ),
+    logo: "../src/logos/xiaomi.png",
+  )
+)))
 
 // #cvEntry(..i18nSW((
 //   title:(

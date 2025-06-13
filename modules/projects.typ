@@ -29,30 +29,30 @@
   )
 )))
 
-#cvEntry(..languageSwitch((
-  "en": (
-    title: [Openwrt Firmware | Opensource Project],
-    society: [Personal Project],
-    date: [06/2023 - 10/2023],
-    location: [Shanghai, China],
-    description: list(
-      [Imporved firmware of Openwrt by injecting extra drivers.],
-      [Custumize the firmware build process for required packages.],
-      [Automate the building process by CI/CD in github]
-    )
-  ),
-  "zh": (
-    title: [Openwrt 固件 | 开源项目],
-    society: [个人项目],
-    date: [06/2023 - 10/2023],
-    location: [中国上海],
-    description: list(
-      [通过注入额外的驱动程序来改进Openwrt固件。],
-      [为所需的软件包定制固件构建过程。],
-      [通过github的CI/CD自动化构建过程]
-    )
-  )
-)))
+// #cvEntry(..languageSwitch((
+//   "en": (
+//     title: [Openwrt Firmware | Opensource Project],
+//     society: [Personal Project],
+//     date: [06/2023 - 10/2023],
+//     location: [Shanghai, China],
+//     description: list(
+//       [Imporved firmware of Openwrt by injecting extra drivers.],
+//       [Custumize the firmware build process for required packages.],
+//       [Automate the building process by CI/CD in github]
+//     )
+//   ),
+//   "zh": (
+//     title: [Openwrt 固件 | 开源项目],
+//     society: [个人项目],
+//     date: [06/2023 - 10/2023],
+//     location: [中国上海],
+//     description: list(
+//       [通过注入额外的驱动程序来改进Openwrt固件。],
+//       [为所需的软件包定制固件构建过程。],
+//       [通过github的CI/CD自动化构建过程]
+//     )
+//   )
+// )))
 
 #cvEntry(..languageSwitch((
   "en": (
@@ -103,7 +103,7 @@
       [使用EfficientNet-B6/B7对图像全局特征进行提取],
       [利用SuperPoint+SuperGlue和DKM模型匹配特征点],
       [将匹配关系输入colmap获取最终的3D空间位置与姿态估计],
-      [获得了银奖（前10%）。]
+      [获得了银奖 (前10%)。]
     )
   )
 )))
@@ -117,7 +117,7 @@
     description: list(
       [Modified ORB SLAM2 to make it suitable for multi-agent environment.],
       [Separated the front-end and back-end of ORB SLAM2 to unload the computing tasks to different nodes.],
-      [Used ROS to conduct multi-agent joint modeling experiments on the Kitti dataset.]
+      [Used ROS to conduct multi-agent joint reconstruction experiments on the Kitti dataset.]
     )
   ),
   "zh": (
@@ -128,7 +128,7 @@
     description: list(
       [改造ORB SLAM 使其适用于多节点(multi-agent)环境],
       [将ORB SLAM前后端分离, 以卸载计算任务指不同节点],
-      [使用ROS在Kitti 数据集上进行多节点联合建模实验]
+      [使用ROS在 Kitti 数据集上进行多节点联合重建实验]
     )
   )
 )))
@@ -142,7 +142,7 @@
     description: list(
       [Implemented colour control algorithms.],
       [Integrated drive, control, and power management circuits.],
-      [Implemented the moter control system based on an STM32 chip.],
+      [Implemented the motor control system based on an STM32 chip.],
       [Received First Prize in National Extracurricular Academic Competition "The Challenge Cup"]
     )
   ),
@@ -160,55 +160,55 @@
   )
 )))
 
-#cvEntry(..languageSwitch((
-  "en": (
-    title: [Research on Quantification and Prediction of Music Evolution],
-    society: [Interdisciplinary Contest in Modeling, World-wide],
-    date: [04/2021],
-    location: [Wuhan, China],
-    description: list(
-      [Developed Multiple models to quantify musical influence.],
-      [Applied RNN neural network to analyze the development of "music's impact on the network" in time series.],
-      [Received Meritorious Winner Prize.]
-    )
-  ),
-  "zh": (
-    title: [研究音乐演变的量化和预测],
-    society: [ICM 数学竞赛,全球],
-    date: [04/2021],
-    location: [中国武汉],
-    description: list(
-      [开发了多个模型来量化音乐影响力。],
-      [应用RNN神经网络分析时间序列中“音乐对网络的影响”的发展。],
-      [获得了Meritorious Winner]
-    )
-  )
-)))
+// #cvEntry(..languageSwitch((
+//   "en": (
+//     title: [Research on Quantification and Prediction of Music Evolution],
+//     society: [Interdisciplinary Contest in Modeling, World-wide],
+//     date: [04/2021],
+//     location: [Wuhan, China],
+//     description: list(
+//       [Developed Multiple models to quantify musical influence.],
+//       [Applied RNN neural network to analyze the development of "music's impact on the network" in time series.],
+//       [Received Meritorious Winner Prize.]
+//     )
+//   ),
+//   "zh": (
+//     title: [研究音乐演变的量化和预测],
+//     society: [ICM 数学竞赛,全球],
+//     date: [04/2021],
+//     location: [中国武汉],
+//     description: list(
+//       [开发了多个模型来量化音乐影响力。],
+//       [应用RNN神经网络分析时间序列中“音乐对网络的影响”的发展。],
+//       [获得了Meritorious Winner]
+//     )
+//   )
+// )))
 
-#cvEntry(..languageSwitch((
-  "en": (
-    title: [Research on Prediction and Placement Strategies for EDP Population],
-    society: [Interdisciplinary Contest in Modeling, World-wide],
-    date: [04/2020],
-    location: [Wuhan, China],
-    description: list(
-      [Constructed a sea level rise model predict the global sea level quantitatively and the scale of EDPs],
-      [Proposed solutions to relocate EDP through cooperative game theory.],
-      [Received Finalist Prize.]
-    )
-  ),
-  "zh": (
-    title: [EDP人群数量和预测和安置方案研究],
-    society: [ICM 数学竞赛, 全球],
-    date: [04/2020],
-    location: [中国武汉],
-    description: list(
-      [构建了与人类活动相关的海平面上升模型，以定量预测全球平均海平面高度和环境流离失所者的规模。],
-      [提出了通过合作博弈理论重新安置EDP的解决方案。],
-      [获得了Finalist]
-    )
-  )
-)))
+// #cvEntry(..languageSwitch((
+//   "en": (
+//     title: [Research on Prediction and Placement Strategies for EDP Population],
+//     society: [Interdisciplinary Contest in Modeling, World-wide],
+//     date: [04/2020],
+//     location: [Wuhan, China],
+//     description: list(
+//       [Constructed a sea level rise model predict the global sea level quantitatively and the scale of EDPs],
+//       [Proposed solutions to relocate EDP through cooperative game theory.],
+//       [Received Finalist Prize.]
+//     )
+//   ),
+//   "zh": (
+//     title: [EDP人群数量和预测和安置方案研究],
+//     society: [ICM 数学竞赛, 全球],
+//     date: [04/2020],
+//     location: [中国武汉],
+//     description: list(
+//       [构建了与人类活动相关的海平面上升模型，以定量预测全球平均海平面高度和环境流离失所者的规模。],
+//       [提出了通过合作博弈理论重新安置EDP的解决方案。],
+//       [获得了Finalist]
+//     )
+//   )
+// )))
 
 // #cvEntry(
 //   title: [Volunteer Data Analyst],

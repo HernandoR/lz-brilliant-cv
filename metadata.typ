@@ -4,6 +4,8 @@
 // INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
 #let varVersion = "" 
 #let varLanguage = "zh"
+// #let varLanguage = "zh"
+// #let varLanguage = sys.inputs.Language
 
 #let firstName = "Zhen"
 #let lastName = "Liu"
@@ -19,9 +21,9 @@
   //extraInfo: "",
 )
 #let headerQuoteInternational = (
-  "": [Master student with financial background looking for a full time job starting from now],
-  "en": [Master student with Machine Learning background looking for a full time job starting from now],
-  "zh": [寻找全职工作]
+  "": [感知算法工程师],
+  "en": [Perception Algorithm Engineer],
+  "zh": [感知算法工程师]
 )
 
 #let nonLatinOverwriteInfo = (

@@ -11,7 +11,7 @@
     logo: "../src/logos/NTU.png",
     description: (
       list(
-          // [Dissertation: Decentrolized SLAM Swarm],
+          [Dissertation: Trajectory tracking based on Multi-layered Continuous Network],
           [Course: Analog IC design #hBar() 
           Digital IC design	#hBar() 
           Genetic Algorithms & Machine Learning],
@@ -27,7 +27,7 @@
     logo: "../src/logos/NTU.png",
     description: (
       list(
-          // [毕业设计: 室外环境下多线程分布式SLAM系统的实现],
+          [学位论文: 基于多层连续网络的轨迹跟踪],
           [课程: 模拟集成电路设计 #hBar() 
           数字集成电路设计 #hBar() 
           遗传算法与机器学习],
@@ -49,8 +49,7 @@
       list(
           [Thesis: Implementation of multi-threaded distributed SLAM system in outdoor environment],
           [Course: Digital System Design (Verilog HDL) #hBar()
-            Probability and Mathematical Statistics #hBar()
-            Digital Signal Processing],
+            Probability and Mathematical Statistics],
             [GPA: 3.68/4.0]
           )
     )

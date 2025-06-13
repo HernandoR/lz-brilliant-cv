@@ -16,12 +16,12 @@
 #cvSkill(..languageSwitch((
   "en":(
     type: [Tech Stack],
-    info: [Python (Pandas/Numpy) #hBar() Computer Vision #hBar() 3D reconstracture #hBar() Machine Learning(PyTorch) #hBar git #hBar() Tableau]
+    info: [Mathmetical model #hBar() Python (Pandas/Numpy) #hBar() Computer Vision #hBar() 3D reconstracture #hBar() Machine Learning(PyTorch) #hBar git #hBar() Tableau]
   ),
   
   "zh":(
     type: [Tech Stack],
-    info: [Python (Pandas/Numpy) #hBar() 计算机视觉 #hBar() 3D重建 #hBar() 机器学习(PyTorch) #hBar git #hBar() Tableau]
+    info: [Python (Pandas/Numpy) #hBar() 计算机视觉 #hBar() 3D重建 #hBar() 机器学习(PyTorch) #hBar() git #hBar() Tableau]
   )
 )))
 
