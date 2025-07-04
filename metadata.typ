@@ -3,8 +3,8 @@
 // Change this variable to control output language & cited module
 // INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
 #let varVersion = "" 
-#let varLanguage = "en"
-// #let varLanguage = "zh"
+// #let varLanguage = "en"
+#let varLanguage = "zh"
 // #let varLanguage = sys.inputs.Language
 
 #let firstName = "Zhen"

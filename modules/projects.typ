@@ -6,17 +6,19 @@
     title: [Open Source Contributions],
     society: [Github],
     date: [2019 - Present],
+    location: [NA.],
     description: list(
-      [Pixi(Rust): Implemented dependency overwrite feature for Pixi],
-      [Pytransform3D(Python): Adopt the package to support xarray-api]
+      [(*Rust*) Pixi: Implemented dependency overwrite feature for Pixi],
+      [(*Python*) Pytransform3D: Adopt the package to support `array-api`]
     )),
     "zh": (
       title: [开源贡献],
       society: [Github],
       date: [2019 - 至今],
+      location: [NA.],
       description: list(
-        [Pixi(Rust): 为Pixi实现了依赖覆盖功能],
-        [Pytransform3D(Python): 使该包支持xarry-api]
+        [(*Rust*) Pixi: 为Pixi实现了依赖覆盖功能],
+        [(*Python*) Pytransform3D: 使该包支持`array-api`]
       )
     )
     

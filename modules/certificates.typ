@@ -14,7 +14,6 @@
     issuer: [HackerRank]
   )
 )))
-
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2023.06],
@@ -40,7 +39,6 @@
     issuer: [Worldquant]
   )
 )))
-
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2023.05],
@@ -53,7 +51,6 @@
     issuer: [Worldquant]
   )
 )))
-
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2022.06],
@@ -66,7 +63,6 @@
     issuer: [*#cvHighlight("中华人民共和国教育部")*]
   )
 )))
-
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2021.04],
@@ -79,20 +75,6 @@
     issuer: [数学及其应用联合会]
   )
 )))
-
-// #cvHonor(..languageSwitch((
-//   "en":( 
-//     date: [2020.08],
-//     title: [Second Prize in Cyber Security Competition],
-//     issuer: [Wuhan University of Science and Technology]
-//   ),
-//   "zh":(
-//     date: [2020.08],
-//     title: [网络安全竞赛二等奖],
-//     issuer: [武汉科技大学]
-//   )
-// )))
-
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2020.06],
@@ -105,7 +87,6 @@
     issuer: [武汉科技大学]
   )
 )))
-
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2020.04],
@@ -118,7 +99,6 @@
     issuer: [数学及其应用联合会]
   )
 )))
-
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2018-2022],
@@ -131,7 +111,6 @@
     issuer: [武汉科技大学]
   )
 )))
-
 #cvHonor(..languageSwitch((
   "en":( 
     date: [2018-2022],

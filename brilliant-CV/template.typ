@@ -77,7 +77,7 @@
   return res
 }
 /* Styles */
-#let fontList = ("FiraCodeNerdFont", "Times New Roman","Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
+#let fontList = ("Songti SC", "Times New Roman","Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
 
 #let headerFont = ("FiraCodeNerdFont","Times New Roman","Roboto", nonLatinFont)
 
@@ -414,11 +414,14 @@
     columns: (16%, 1fr,25%),
     inset: 0pt,
     column-gutter: RegularFontSize,
+    // row-gutter: TinyGap,
+    rows: RegularFontSize,
     align: horizon,
     stroke: none,
     honorDateStyle(date),
     honorTitleStyle(title),
-    [#honorIssuerStyle(issuer) #honorLocationStyle(location)],
+    honorIssuerStyle(issuer)
+    // [#honorIssuerStyle(issuer) #honorLocationStyle(location)],
     // if issuer == "" {
     //   honorTitleStyle(title)
     // } else [
