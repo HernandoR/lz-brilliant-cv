@@ -8,7 +8,7 @@
     date: [2019 - Present],
     description: list(
       [Pixi(Rust): Implemented dependency overwrite feature for Pixi],
-      [Pytransform3D(Python): Adopt the package to support xarry-api]
+      [Pytransform3D(Python): Adopt the package to support xarray-api]
     )),
     "zh": (
       title: [开源贡献],
