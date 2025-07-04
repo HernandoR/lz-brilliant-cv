@@ -9,8 +9,10 @@
     date: [ 2024.07 - now],
     location: [ Wuhan, China ],
     description: list(
-      [Training multi-modal point cloud models on multiple GPUs],
-      [Visual semantic segmentation model training],
+      [Training fitting-based models for visual and semantic reconstruction tasks],
+      [Reproducing open-source models and adapting them to internal datasets],
+      [Training learning-based point cloud registration models on multiple GPUs],
+      [Engineering point cloud registration models for scene reconstruction tasks],
       [Keywords: 3D reconstruction, machine learning, deep learning, algorithm optimization]
     ),
     logo: "../src/logos/xiaomi.png",
@@ -22,37 +24,15 @@
     date: [ 2024.07 - 至今],
     location: [ 武汉, 中国 ],
     description: list(
-      [在多GPU上训练多模态点云模型],
-      [视觉语义分割模型训练],
+      [训练fitting-based模型完成视觉+语义重建任务],
+      [复现开源模型, 并适配内部数据集],
+      [在多GPU上训练learning-based点云配准模型],
+      [工程化点云配准模型完成场景重建任务],
       [Keywords: 3D重建, 机器学习, 深度学习, 算法优化]
     ),
     logo: "../src/logos/xiaomi.png",
   )
 )))
-
-// #cvEntry(..i18nSW((
-//   title:(
-//     "en": [ Applied Scientist Intern ],
-//     "zh": [ 应用科学家实习生 ]
-//   ),
-//   society:(
-//     "en": [ Amazon Web Services ],
-//     "zh": [ 亚马逊云科技 ]
-//   ),
-//   date: [ 2023.12 - 2024.05],
-//   location: [ Shanghai, China ],
-//   description: (
-//     "en": list(
-//       [],
-//     ),
-//     "zh": list(
-//       [],
-//     )
-//   ),
-//   logo: "../src/logos/aws.png",
-// )))
-
-
 
 // #cvEntry(
 //     title: [Director of Data Science],

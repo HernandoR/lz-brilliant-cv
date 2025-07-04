@@ -3,7 +3,7 @@
 // Change this variable to control output language & cited module
 // INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
 #let varVersion = "" 
-#let varLanguage = "zh"
+#let varLanguage = "en"
 // #let varLanguage = "zh"
 // #let varLanguage = sys.inputs.Language
 
@@ -21,14 +21,14 @@
   //extraInfo: "",
 )
 #let headerQuoteInternational = (
-  "": [感知算法工程师],
-  "en": [Perception Algorithm Engineer],
-  "zh": [感知算法工程师]
+  "": [自动驾驶: 感知算法工程师],
+  "en": [Autonomous Driving: Perception Algorithm Engineer],
+  "zh": [自动驾驶: 感知算法工程师]
 )
 
 #let nonLatinOverwriteInfo = (
   // "customFont": "FangSong_GB2312",
-  "customFont": "FiraMonoNerdFont",
+  "customFont": "FiraCode Nerd Font Mono",
   "firstName": "刘朕",
   "lastName": "",
   // submit an issue if you think other variables should be in this array

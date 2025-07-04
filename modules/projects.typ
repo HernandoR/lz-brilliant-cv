@@ -1,6 +1,26 @@
 #import "../brilliant-CV/template.typ": *
 
 #cvSection("Projects & Associations")
+#cvEntry(..languageSwitch((
+  "en": (
+    title: [Open Source Contributions],
+    society: [Github],
+    date: [2019 - Present],
+    description: list(
+      [Pixi(Rust): Implemented dependency overwrite feature for Pixi],
+      [Pytransform3D(Python): Adopt the package to support xarry-api]
+    )),
+    "zh": (
+      title: [开源贡献],
+      society: [Github],
+      date: [2019 - 至今],
+      description: list(
+        [Pixi(Rust): 为Pixi实现了依赖覆盖功能],
+        [Pytransform3D(Python): 使该包支持xarry-api]
+      )
+    )
+    
+)))
 
 #cvEntry(..languageSwitch((
   "en": (
@@ -11,7 +31,7 @@
     description: list(
       [Deployed multiple virtual machines hosted on Proxmox Virtual Environment.],
       [Constructed an automatic TV tracking system by docker-compose.],
-      [Migrated the services into kubernates, and used TLS to keep the access secure.],
+      [Migrated the services into Kubernetes, and used TLS to keep the access secure.],
       [Deployed CDN Service from AWS]
     )
   ),
@@ -76,7 +96,7 @@
       [构建了一个PyTorch训练模板。],
       [执行了AWS SageMaker自动训练。],
       [训练了多个图像分割模型，例如UNet、FPENet、SegNet],
-      [从Meta评估了Segment Anything Model (SAM)。]
+      [评估了Meta 的 Segment Anything Model (SAM)。]
     )
   )
 )))
