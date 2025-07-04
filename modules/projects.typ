@@ -11,16 +11,16 @@
       [(*Rust*) Pixi: Implemented dependency overwrite feature for Pixi],
       [(*Python*) Pytransform3D: Adopt the package to support `array-api`]
     )),
-    "zh": (
-      title: [开源贡献],
-      society: [Github],
-      date: [2019 - 至今],
-      location: [NA.],
-      description: list(
-        [(*Rust*) Pixi: 为Pixi实现了依赖覆盖功能],
-        [(*Python*) Pytransform3D: 使该包支持`array-api`]
-      )
+  "zh": (
+    title: [开源贡献],
+    society: [Github],
+    date: [2019 - 至今],
+    location: [NA.],
+    description: list(
+      [(*Rust*) Pixi: 为Pixi实现了依赖覆盖功能],
+      [(*Python*) Pytransform3D: 使该包支持`array-api`]
     )
+  )
     
 )))
 
@@ -160,7 +160,7 @@
     title: [Design of FDM 3D Printer Based on Machine Vision Feedback],
     society: [National Innovation Training Program],
     date: [06/2020 - 06/2021],
-    location: [Shanghai, China],
+    location: [Wuhan, China],
     description: list(
       [Implemented colour control algorithms.],
       [Integrated drive, control, and power management circuits.],
@@ -172,7 +172,7 @@
     title: [基于机器视觉反馈的FDM 3D打印机],
     society: [国家级创新训练计划],
     date: [06/2020 - 06/2021],
-    location: [中国上海],
+    location: [中国武汉],
     description: list(
       [实现了颜色控制算法。],
       [集成了驱动、控制和电源管理电路。],
