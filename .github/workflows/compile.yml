@@ -11,21 +11,20 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: 'recursive'
 
       - name: Setup Typst
-        uses: yusancky/setup-typst@v2.0.1
-        id: setup-typst
+        uses: typst-community/setup-typst@v4
         with:
-          version: 'latest'
+          typst-version: 'latest'
 
       - run: typst compile cv.typ --font-path ./src/fonts
       - run: typst compile letter.typ --font-path ./src/fonts
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: output
           path: ./*.pdf
