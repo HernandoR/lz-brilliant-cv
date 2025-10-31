@@ -44,9 +44,8 @@
     location: [中国上海],
     description: list(
       [在Proxmox虚拟环境上部署了多个虚拟机。],
-      [通过docker-compose构建了一个自动的电视追剧系统。],
-      [将服务迁移到了kubernates上, 并使用TLS保持安全访问],
-      [在AWS上部署了CDN服务。]
+      [通过docker-compose构建了一个自动影视系统。],
+      [在AWS上部署了CDN服务，并使用TLS保持安全访问。]
     )
   )
 )))

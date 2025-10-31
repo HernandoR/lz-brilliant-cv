@@ -4,7 +4,7 @@
 
 /* Packages */
 #import "../metadata.typ": *
-#import "@preview/fontawesome:0.1.0": *
+#import "@preview/fontawesome:0.6.0": *
 
 /* font size */
 #let TitleFontSize = 32pt
@@ -79,7 +79,7 @@
 /* Styles */
 #let fontList = ("Songti SC", "Times New Roman","Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
 
-#let headerFont = ("FiraCodeNerdFont","Times New Roman","Roboto", nonLatinFont)
+#let headerFont = ("FiraCode Nerd Font Mono","Times New Roman","Roboto", nonLatinFont)
 
 #let awesomeColors = (
   skyblue: rgb("#0395DE"),

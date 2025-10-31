@@ -9,10 +9,10 @@
     date: [ 2024.07 - now],
     location: [ Wuhan, China ],
     description: list(
-      [Training fitting-based models for visual and semantic reconstruction tasks],
-      [Reproducing open-source models and adapting them to internal datasets],
-      [Training learning-based point cloud registration models on multiple GPUs],
-      [Engineering point cloud registration models for scene reconstruction tasks],
+      [Streamlined multi-vehicle and multi-trip ground truth data production pipeline, boosting data annotation efficiency by 500%+],
+      [Adopting open-source models to internal datasets, turning them to production-ready reliable],
+      [Training and deploying feed-forward models on multiple GPUs for scene reconstruction tasks],
+      [Develop and publish python sdk for internal training data production and management],
       [Keywords: 3D reconstruction, machine learning, deep learning, algorithm optimization]
     ),
     logo: "../src/logos/xiaomi.png",
@@ -24,11 +24,11 @@
     date: [ 2024.07 - 至今],
     location: [ 武汉, 中国 ],
     description: list(
-      [训练fitting-based模型完成视觉+语义重建任务],
-      [复现开源模型, 并适配内部数据集],
-      [在多GPU上训练learning-based点云配准模型],
-      [工程化点云配准模型完成场景重建任务],
-      [Keywords: 3D重建, 机器学习, 深度学习, 算法优化]
+      [打通多车多趟真值数据生产链路，提升数据标注效率500%+],
+      [将开源模型应用于内部数据集，使其可以可靠地生产],
+      [在多GPU上训练和部署用于场景重建任务的前馈模型],
+      [开发并发布用于内部训练数据生产和管理的python sdk],
+      [关键词: 3D重建, 机器学习, 深度学习, 算法优化]
     ),
     logo: "../src/logos/xiaomi.png",
   )
