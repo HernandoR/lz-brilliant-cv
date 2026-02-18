@@ -3,6 +3,9 @@
 
 font_path := "./src/fonts/"
 
+install-fonts:
+  bash ./scripts/install_fonts.sh
+
 watch-cv lang="en":
   typst watch ./cv.typ ./output/CV-{{lang}}.pdf --font-path {{font_path}} --input lang={{lang}}
 
@@ -37,5 +40,6 @@ compile-letter-all:
   just compile-letter-en
 
 compile-all:
+  just install-fonts
   just compile-cv-all
   just compile-letter-all

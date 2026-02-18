@@ -87,15 +87,15 @@
 }
 /* Styles */
 #let fontList = if nonLatinFont == "" {
-  ("Songti SC", "Times New Roman", "Source Sans Pro", "Font Awesome 6 Brands", "Font Awesome 6 Free")
+  ("Songti SC","Noto Sans CJK SC", "Times New Roman", "Source Sans Pro", "Font Awesome 6 Brands", "Font Awesome 6 Free")
 } else {
-  ("Songti SC", "Times New Roman", "Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
+  ("Songti SC","Noto Sans CJK SC", "Times New Roman", "Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
 }
 
 #let headerFont = if nonLatinFont == "" {
-  ("FiraCode Nerd Font Mono", "Times New Roman", "Roboto")
+  ("FiraCode Nerd Font Mono","Noto Sans CJK SC", "Times New Roman", "Roboto")
 } else {
-  ("FiraCode Nerd Font Mono", "Times New Roman", "Roboto", nonLatinFont)
+  ("FiraCode Nerd Font Mono","Noto Sans CJK SC", "Times New Roman", "Roboto", nonLatinFont)
 }
 
 #let awesomeColors = (

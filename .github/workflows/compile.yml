@@ -29,6 +29,9 @@ jobs:
       - name: Setup just
         uses: extractions/setup-just@v3
 
+      - name: Install fonts
+        run: just install-fonts
+
       - run: just compile-all
 
       - name: Upload Artifacts
@@ -56,6 +59,9 @@ jobs:
 
       - name: Setup just
         uses: extractions/setup-just@v3
+
+      - name: Install fonts
+        run: just install-fonts
 
       - name: Compile PDFs
         run: |

@@ -44,7 +44,7 @@
     society: [Wuhan University of Science and Technology],
     date: [2018 - 2022],
     location: [Hubei, China],
-    logo: "../src/logos/wust.png",
+    logo: "../src/logos/WUST.png",
     description: (
       list(
           [#cvHighlight("GPA: 3.68/4.0")],
@@ -60,7 +60,7 @@
     society: [武汉科技大学],
     date: [2018 - 2022],
     location: [湖北, 中国],
-    logo: "../src/logos/wust.png",
+    logo: "../src/logos/WUST.png",
     description: (
       list(
           [#cvHighlight("GPA: 3.68/4.0")],
@@ -120,7 +120,7 @@
 //   location: (
 //     "en": [Hubei, China],
 //     "zh": [湖北, 中国]),
-//   logo: "../src/logos/wust.png",
+//   logo: "../src/logos/WUST.png",
 //   description: (
 //     "en": 
 //       list(

@@ -44,7 +44,7 @@
     )),
     date: [2018 - 2022],
     location: [Hubei, China],
-    logo: "../src/logos/wust.png",
+    logo: "../src/logos/WUST.png",
     description: languageSwitch((
       "en": 
         list(
