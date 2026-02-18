@@ -86,17 +86,19 @@
   return res
 }
 /* Styles */
-#let fontList = if nonLatinFont == "" {
-  ("Songti SC","Noto Sans CJK SC", "Times New Roman", "Source Sans Pro", "Font Awesome 6 Brands", "Font Awesome 6 Free")
+#let bodyFontList = if nonLatinFont == "" {
+  ("Noto Sans CJK SC", "Font Awesome 7 Brands", "Font Awesome 7 Free")
 } else {
-  ("Songti SC","Noto Sans CJK SC", "Times New Roman", "Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
+  ("Noto Sans CJK SC", nonLatinFont, "Font Awesome 7 Brands", "Font Awesome 7 Free")
 }
 
-#let headerFont = if nonLatinFont == "" {
-  ("FiraCode Nerd Font Mono","Noto Sans CJK SC", "Times New Roman", "Roboto")
+#let titleFontList = if nonLatinFont == "" {
+  ("Noto Sans CJK SC")
 } else {
-  ("FiraCode Nerd Font Mono","Noto Sans CJK SC", "Times New Roman", "Roboto", nonLatinFont)
+  ("Noto Sans CJK SC", nonLatinFont)
 }
+
+#let codeFont = ("FiraCode Nerd Font Mono")
 
 #let awesomeColors = (
   skyblue: rgb("#0395DE"),
@@ -124,7 +126,7 @@
 )}
 
 #let headerFirstNameStyle(str) = {text(
-  font: headerFont,
+  font: titleFontList,
   size: TitleFontSize,
   weight: "light",
   fill: regularColors.darkgray,
@@ -132,7 +134,7 @@
 )}
 
 #let headerLastNameStyle(str) = {text(
-  font: headerFont,
+  font: titleFontList,
   size: TitleFontSize,
   weight: "bold",
   str
@@ -532,10 +534,11 @@
 /* Layout */
 #let layout(doc) = {
   set text(
-    font: fontList,
+    font: bodyFontList,
     weight: "regular",
     size: RegularFontSize,
   )
+  show raw: set text(font: codeFont)
   set align(left)
   set page(
     paper: "a4",
