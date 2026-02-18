@@ -1,7 +1,7 @@
 #import "../brilliant-CV/template.typ": *
 
 #cvSection("Projects & Associations")
-#cvEntry(..languageSwitch((
+#cvEntry(noPageBreak: true, ..languageSwitch((
   "en": (
     title: [Open Source Contributions],
     society: [Github],
@@ -24,7 +24,7 @@
     
 )))
 
-#cvEntry(..languageSwitch((
+#cvEntry(noPageBreak: true, ..languageSwitch((
   "en": (
     title: [Personal Server | DevOps],
     society: [Personal Project],
@@ -75,7 +75,7 @@
 //   )
 // )))
 
-#cvEntry(..languageSwitch((
+#cvEntry(noPageBreak: true, ..languageSwitch((
   "en": (
     title: [Vesuvius Challenge - Ink Detection],
     society: [Kaggle ML Competition],
@@ -102,7 +102,7 @@
   )
 )))
 
-#cvEntry(..languageSwitch((
+#cvEntry(noPageBreak: true, ..languageSwitch((
   "en": (
     title: [Image Matching Challenge 2023 | Kaggle Competition],
     society: [Kaggle ML Competition],
@@ -129,7 +129,7 @@
   )
 )))
 
-#cvEntry(..languageSwitch((
+#cvEntry(noPageBreak: true, ..languageSwitch((
   "en": (
     title: [ORB-SLAM2 Based Distributed SLAM],
     society: [Undergraduate Thesis],
@@ -154,7 +154,7 @@
   )
 )))
 
-#cvEntry(..languageSwitch((
+#cvEntry(noPageBreak: true, ..languageSwitch((
   "en": (
     title: [Design of FDM 3D Printer Based on Machine Vision Feedback],
     society: [National Innovation Training Program],

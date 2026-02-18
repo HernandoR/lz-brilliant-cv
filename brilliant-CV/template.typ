@@ -52,13 +52,22 @@
 
 
 #let languageSwitch(dict) = {
-  for (k, v) in dict {
-    if k == varLanguage {
-      return v
-      break
-    }
+  let langValue = dict.at(varLanguage, default: none)
+  if langValue != none {
+    return langValue
   }
-  panic("i18n: language value not matching any key in the array")
+
+  let englishValue = dict.at("en", default: none)
+  if englishValue != none {
+    return englishValue
+  }
+
+  let neutralValue = dict.at("", default: none)
+  if neutralValue != none {
+    return neutralValue
+  }
+
+  panic("i18n: language key missing (expected varLanguage / en / empty)")
 }
 
 #let i18nSW(dict) = {
@@ -77,9 +86,17 @@
   return res
 }
 /* Styles */
-#let fontList = ("Songti SC", "Times New Roman","Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
+#let fontList = if nonLatinFont == "" {
+  ("Songti SC", "Times New Roman", "Source Sans Pro", "Font Awesome 6 Brands", "Font Awesome 6 Free")
+} else {
+  ("Songti SC", "Times New Roman", "Source Sans Pro", nonLatinFont, "Font Awesome 6 Brands", "Font Awesome 6 Free")
+}
 
-#let headerFont = ("FiraCode Nerd Font Mono","Times New Roman","Roboto", nonLatinFont)
+#let headerFont = if nonLatinFont == "" {
+  ("FiraCode Nerd Font Mono", "Times New Roman", "Roboto")
+} else {
+  ("FiraCode Nerd Font Mono", "Times New Roman", "Roboto", nonLatinFont)
+}
 
 #let awesomeColors = (
   skyblue: rgb("#0395DE"),
@@ -333,15 +350,17 @@
   let highlightText = title.slice(0,3)
   let normalText = title.slice(3)
 
-  v(beforeSectionSkip)
-  if nonLatinOverwrite {
-    sectionTitleStyle(title, color: accentColor)
-  } else {
-    sectionTitleStyle(highlightText, color: accentColor)
-    sectionTitleStyle(normalText, color: black)
-  }
-  h(2pt)
-  box(width: 1fr, line(stroke: 0.9pt, length: 100%))
+  block(sticky: true)[
+    #v(beforeSectionSkip)
+    #if nonLatinOverwrite {
+      sectionTitleStyle(title, color: accentColor)
+    } else {
+      sectionTitleStyle(highlightText, color: accentColor)
+      sectionTitleStyle(normalText, color: black)
+    }
+    #h(2pt)
+    #box(width: 1fr, line(stroke: 0.9pt, length: 100%))
+  ]
 }
 
 #let cvEntry(
@@ -350,7 +369,8 @@
   date: "Date",
   location: "Location",
   description: "Description",
-  logo: ""
+  logo: "",
+  noPageBreak: false,
 ) = {
   let ifSocietyFirst(condition, field1, field2) = {
     return if condition {field1} else {field2}
@@ -366,27 +386,37 @@
   let setLogoContent(path) = {
     return if logo == "" [] else {image(path, width: 100%)}
   }
-  v(beforeEntrySkip)
-  table(
-    columns: (ifLogo(logo, 4%, 0%), 1fr),
-    inset: 0pt,
-    stroke: none,
-    align: horizon,
-    column-gutter: ifLogo(logo, 4pt, 0pt),
-    setLogoContent(logo),
-    table(
-      columns: (1fr, auto),
+  let entryContent = [
+    #v(beforeEntrySkip)
+    #table(
+      columns: (ifLogo(logo, 4%, 0%), 1fr),
       inset: 0pt,
       stroke: none,
-      row-gutter: LargeGap,
-      align: auto,
-      {entryA1Style(ifSocietyFirst(varEntrySocietyFirst, society, title))},
-      {entryA2Style(date)},
-      {entryB1Style(ifSocietyFirst(varEntrySocietyFirst, title, society))},
-      {entryB2Style(location)},
+      align: horizon,
+      column-gutter: ifLogo(logo, 4pt, 0pt),
+      setLogoContent(logo),
+      table(
+        columns: (1fr, auto),
+        inset: 0pt,
+        stroke: none,
+        row-gutter: LargeGap,
+        align: auto,
+        {entryA1Style(ifSocietyFirst(varEntrySocietyFirst, society, title))},
+        {entryA2Style(date)},
+        {entryB1Style(ifSocietyFirst(varEntrySocietyFirst, title, society))},
+        {entryB2Style(location)},
+      )
     )
-  )
-  entryDescriptionStyle(description)
+    #entryDescriptionStyle(description)
+  ]
+
+  if noPageBreak {
+    block(breakable: false)[
+      #entryContent
+    ]
+  } else {
+    entryContent
+  }
 }
 
 #let cvSkill(

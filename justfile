@@ -1,24 +1,41 @@
 # pull-submodule:
 #   git submodule update --init --recursive --depth 1
 
-watch-cv:
-  typst watch ./cv.typ ./output/CV.pdf --font-path ./src/fonts/ 
+font_path := "./src/fonts/"
 
-watch-letter:
-  typst watch ./letter.typ ./output/Letter.pdf --font-path ./src/fonts/
+watch-cv lang="en":
+  typst watch ./cv.typ ./output/CV-{{lang}}.pdf --font-path {{font_path}} --input lang={{lang}}
 
+watch-letter lang="en":
+  typst watch ./letter.typ ./output/Letter-{{lang}}.pdf --font-path {{font_path}} --input lang={{lang}}
+
+
+compile-cv lang="en":
+  typst compile ./cv.typ ./output/CV-{{lang}}.pdf --font-path {{font_path}} --input lang={{lang}}
+
+compile-letter lang="en":
+  typst compile ./letter.typ ./output/Letter-{{lang}}.pdf --font-path {{font_path}} --input lang={{lang}}
 
 compile-cv-zh:
-  sed -i '' "s/^let varLanguage = \"en\"/#let varLanguage = \"zh\"/" ./metadata.typ
-  typst compile ./cv.typ ./output/CV-zh.pdf --font-path ./src/fonts/
+  just compile-cv zh
 
 compile-cv-en:
-  sed -i '' "s/^let varLanguage = \"zh\"/#let varLanguage = \"en\"/" ./metadata.typ
-  typst compile ./cv.typ ./output/CV-en.pdf --font-path ./src/fonts/
+  just compile-cv en
 
-compile-cv:
-  compile-cv-zh
-  compile-cv-en
+compile-cv-all:
+  just compile-cv-zh
+  just compile-cv-en
 
-compile-letter: 
-  typst compile ./letter.typ ./output/Letter.pdf  --font-path ./src/fonts/
+compile-letter-zh:
+  just compile-letter zh
+
+compile-letter-en:
+  just compile-letter en
+
+compile-letter-all:
+  just compile-letter-zh
+  just compile-letter-en
+
+compile-all:
+  just compile-cv-all
+  just compile-letter-all

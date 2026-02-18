@@ -1,11 +1,13 @@
 /* Personal Information */
 
-// Change this variable to control output language & cited module
-// INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
+// Optional variant for modules folder suffix.
+// INFO: value must match folder suffix; i.e. "SinglePage" -> "./modules_SinglePage"
 #let varVersion = "" 
-#let varLanguage = "en"
-// #let varLanguage = "zh"
-// #let varLanguage = sys.inputs.Language
+
+// Language is injected from CLI: --input lang=en|zh
+// Fallback order: lang -> Language -> "en"
+#let _cliLanguage = sys.inputs.at("lang", default: sys.inputs.at("Language", default: ""))
+#let varLanguage = if _cliLanguage == "" { "en" } else { _cliLanguage }
 
 #let firstName = "Zhen"
 #let lastName = "Liu"
