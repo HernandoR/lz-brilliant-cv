@@ -11,11 +11,11 @@
     logo: "../src/logos/NTU.png",
     description: (
       list(
-          [Dissertation: Trajectory tracking based on Multi-layered Continuous Network],
+          [#cvHighlight("GPA: 3.88/5.0")],
+          [Dissertation: Trajectory tracking based on #cvHighlight("Multi-layered Continuous Network")],
           [Course: Analog IC design #hBar() 
           Digital IC design	#hBar() 
-          Genetic Algorithms & Machine Learning],
-          [GPA: 3.88/5.0]
+          #cvHighlight("Genetic Algorithms & Machine Learning")]
           )
     )
   ),
@@ -27,11 +27,11 @@
     logo: "../src/logos/NTU.png",
     description: (
       list(
-          [学位论文: 基于多层连续网络的轨迹跟踪],
+          [#cvHighlight("GPA: 3.88/5.0")],
+          [学位论文: 基于#cvHighlight("多层连续网络")的轨迹跟踪],
           [课程: 模拟集成电路设计 #hBar() 
           数字集成电路设计 #hBar() 
-          遗传算法与机器学习],
-          [GPA: 3.88/5.0]
+          #cvHighlight("遗传算法与机器学习")]
           )
     )
   )
@@ -47,10 +47,10 @@
     logo: "../src/logos/wust.png",
     description: (
       list(
-          [Thesis: Implementation of multi-threaded distributed SLAM system in outdoor environment],
+          [#cvHighlight("GPA: 3.68/4.0")],
+          [Thesis: Implementation of #cvHighlight("multi-threaded distributed SLAM") in outdoor environment],
           [Course: Digital System Design (Verilog HDL) #hBar()
-            Probability and Mathematical Statistics],
-            [GPA: 3.68/4.0]
+            #cvHighlight("Probability and Mathematical Statistics")]
           )
     )
   ),
@@ -63,12 +63,12 @@
     logo: "../src/logos/wust.png",
     description: (
       list(
-          [毕业设计: 室外环境下多线程分布式SLAM系统的实现],
+          [#cvHighlight("GPA: 3.68/4.0")],
+          [毕业设计: 室外环境下#cvHighlight("多线程分布式SLAM")系统的实现],
           [数字系统设计(Verilog HDL) #hBar() 
             无线通信 #hBar() 
             概率统计 #hBar() 
-            信号处理],
-          [GPA: 3.68/4.0]
+            #cvHighlight("信号处理")]
           )
     )
   )

@@ -8,8 +8,8 @@
     date: [2019 - Present],
     location: [NA.],
     description: list(
-      [(*Rust*) Pixi: Implemented dependency overwrite feature for Pixi],
-      [(*Python*) Pytransform3D: Adopt the package to support `array-api`]
+      [(*Rust*) Pixi: #cvHighlight("Implemented dependency overwrite feature") for Pixi],
+      [(*Python*) Pytransform3D: Added support for #cvHighlight("array-api")]
     )),
   "zh": (
     title: [开源贡献],
@@ -17,8 +17,8 @@
     date: [2019 - 至今],
     location: [NA.],
     description: list(
-      [(*Rust*) Pixi: 为Pixi实现了依赖覆盖功能],
-      [(*Python*) Pytransform3D: 使该包支持`array-api`]
+      [(*Rust*) Pixi: 为 Pixi #cvHighlight("实现依赖覆盖功能")],
+      [(*Python*) Pytransform3D: 使该包支持 #cvHighlight("array-api")]
     )
   )
     
@@ -31,10 +31,10 @@
     date: [08/2021 - Present],
     location: [Shanghai, China],
     description: list(
+      [Migrated services into #cvHighlight("Kubernetes") and secured access with #cvHighlight("TLS + AWS CDN")],
       [Deployed multiple virtual machines hosted on Proxmox Virtual Environment.],
-      [Constructed an automatic TV tracking system by docker-compose.],
-      [Migrated the services into Kubernetes, and used TLS to keep the access secure.],
-      [Deployed CDN Service from AWS]
+      [Constructed an automatic TV tracking system with docker-compose.],
+      [Implemented long-term homelab service operations and maintenance.]
     )
   ),
   "zh": (
@@ -43,9 +43,9 @@
     date: [08/2021 - 至今],
     location: [中国上海],
     description: list(
-      [在Proxmox虚拟环境上部署了多个虚拟机。],
-      [通过docker-compose构建了一个自动影视系统。],
-      [在AWS上部署了CDN服务，并使用TLS保持安全访问。]
+      [将服务迁移到 #cvHighlight("Kubernetes")，并通过 #cvHighlight("TLS + AWS CDN") 保证安全访问],
+      [在 Proxmox 虚拟环境上部署了多个虚拟机。],
+      [通过 docker-compose 构建了自动影视系统。]
     )
   )
 )))
@@ -82,9 +82,9 @@
     date: [03/2023 - 06/2023],
     location: [Singapore],
     description: list(
-      [Constructed a PyTorch training Template.],
+      [#cvHighlight("Trained multiple segmentation models") including UNet, FPNet, and SegNet],
+      [Constructed a PyTorch training template.],
       [Performed SageMaker auto-training.],
-      [Trained multiple segment models, i.e., UNet, FPNet, SegNet.],
       [Evaluated Segment Anything Model (SAM) from Meta]
     )
   ),
@@ -94,9 +94,9 @@
     date: [03/2023 - 06/2023],
     location: [新加坡],
     description: list(
-      [构建了一个PyTorch训练模板。],
-      [执行了AWS SageMaker自动训练。],
-      [训练了多个图像分割模型，例如UNet、FPENet、SegNet],
+      [#cvHighlight("训练了多个图像分割模型")，包括 UNet、FPENet、SegNet],
+      [构建了一个 PyTorch 训练模板。],
+      [执行了 AWS SageMaker 自动训练。],
       [评估了Meta 的 Segment Anything Model (SAM)。]
     )
   )
@@ -109,10 +109,10 @@
     date: [02/2023 - 06/2023],
     location: [Singapore],
     description: list(
-      [Extract global features from images using EfficientNet-B6/B7.],
+      [#cvHighlight("Achieved Silver Prize (Top 10%)")],
+      [Extracted global features from images using EfficientNet-B6/B7.],
       [Match feature points using SuperPoint+SuperGlue and DKM models.],
-      [Input the matching relations into COLMAP to obtain the final 3D spatial positions and pose estimation.],
-      [Achieved Silver Prize (top 10%)]
+      [Input matching relations into COLMAP to obtain final 3D spatial positions and pose estimation.]
     )
   ),
   "zh": (
@@ -121,10 +121,10 @@
     date: [02/2023 - 06/2023],
     location: [新加坡],
     description: list(
-      [使用EfficientNet-B6/B7对图像全局特征进行提取],
+      [#cvHighlight("获得银奖（Top 10%）")],
+      [使用 EfficientNet-B6/B7 对图像全局特征进行提取],
       [利用SuperPoint+SuperGlue和DKM模型匹配特征点],
-      [将匹配关系输入colmap获取最终的3D空间位置与姿态估计],
-      [获得了银奖 (前10%)。]
+      [将匹配关系输入 colmap 获取最终的 3D 空间位置与姿态估计]
     )
   )
 )))
@@ -136,8 +136,8 @@
     date: [02/2022 - 06/2022],
     location: [Wuhan, China],
     description: list(
-      [Modified ORB SLAM2 to make it suitable for multi-agent environment.],
-      [Separated the front-end and back-end of ORB SLAM2 to unload the computing tasks to different nodes.],
+      [#cvHighlight("Separated front-end and back-end of ORB-SLAM2") to offload computation to distributed nodes],
+      [Modified ORB-SLAM2 to make it suitable for multi-agent environments.],
       [Used ROS to conduct multi-agent joint reconstruction experiments on the Kitti dataset.]
     )
   ),
@@ -147,8 +147,8 @@
     date: [02/2022 - 06/2022],
     location: [中国武汉],
     description: list(
-      [改造ORB SLAM 使其适用于多节点(multi-agent)环境],
-      [将ORB SLAM前后端分离, 以卸载计算任务指不同节点],
+      [#cvHighlight("将 ORB-SLAM 前后端分离")，把计算任务卸载到不同节点],
+      [改造 ORB-SLAM 使其适用于多节点 (multi-agent) 环境],
       [使用ROS在 Kitti 数据集上进行多节点联合重建实验]
     )
   )
@@ -161,10 +161,10 @@
     date: [06/2020 - 06/2021],
     location: [Wuhan, China],
     description: list(
+      [#cvHighlight("Received First Prize") in National Extracurricular Academic Competition "The Challenge Cup"],
       [Implemented colour control algorithms.],
       [Integrated drive, control, and power management circuits.],
-      [Implemented the motor control system based on an STM32 chip.],
-      [Received First Prize in National Extracurricular Academic Competition "The Challenge Cup"]
+      [Implemented the motor control system based on an STM32 chip.]
     )
   ),
   "zh": (
@@ -173,10 +173,10 @@
     date: [06/2020 - 06/2021],
     location: [中国武汉],
     description: list(
+      [#cvHighlight("在全国“挑战杯”竞赛中获二等奖")],
       [实现了颜色控制算法。],
       [集成了驱动、控制和电源管理电路。],
-      [基于STM32芯片实现了控制系统。],
-      [在全国课外学术竞赛“挑战杯”中获得了二等奖]
+      [基于STM32芯片实现了控制系统。]
     )
   )
 )))
