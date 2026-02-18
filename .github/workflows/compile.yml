@@ -3,6 +3,12 @@ name: Check PDF Compilation
 on:
   push: {}
   pull_request: {}
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -13,19 +19,62 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: 'recursive'
+          submodules: "recursive"
 
       - name: Setup Typst
         uses: typst-community/setup-typst@v4
         with:
-          typst-version: 'latest'
+          typst-version: "latest"
 
-      - run: typst compile cv.typ --font-path ./src/fonts
-      - run: typst compile letter.typ --font-path ./src/fonts
+      - name: Setup just
+        uses: extractions/setup-just@v3
+
+      - run: just compile-all
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: output
-          path: ./*.pdf
+          path: ./output/*.pdf
           if-no-files-found: error
+
+  daily-release:
+    name: daily-release
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: "recursive"
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
+        with:
+          typst-version: "latest"
+
+      - name: Setup just
+        uses: extractions/setup-just@v3
+
+      - name: Compile PDFs
+        run: |
+          just compile-all
+
+      - name: Compute release version
+        id: rel
+        run: |
+          yy="$(date -u +%y)"
+          mm="$(date -u +%m)"
+          dd="$(date -u +%d)"
+          ww=$(( (10#$dd - 1) / 7 + 1 ))
+          version="${yy}.${mm}.$(printf '%02d' "$ww")"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.rel.outputs.version }}
+          name: ${{ steps.rel.outputs.version }}
+          files: |
+            output/*.pdf
