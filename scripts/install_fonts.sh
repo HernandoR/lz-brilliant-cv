@@ -16,8 +16,9 @@ sudo apt-get install -y --no-install-recommends \
 npm install --save @fortawesome/fontawesome-free
 
 # https://use.fontawesome.com/releases/v7.2.0/fontawesome-free-7.2.0-web.zip
-wget -O fontawesome.zip https://use.fontawesome.com/releases/v7.2.0/fontawesome-free-7.2.0-web.zip
+wget -O fontawesome.zip https://use.fontawesome.com/releases/v7.2.0/fontawesome-free-7.2.0-desktop.zip
 unzip fontawesome.zip -d fontawesome
 # install to system font directory
-sudo cp fontawesome/fontawesome-free-7.2.0-web/webfonts/* /usr/share/fonts/truetype/
+sudo cp fontawesome/fontawesome-free-7.2.0-desktop/otfs/* /usr/share/fonts/truetype/
 sudo fc-cache -f -v
+sudo fc-list | grep -i "fontawesome"
