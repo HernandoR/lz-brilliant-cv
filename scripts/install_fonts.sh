@@ -21,4 +21,4 @@ unzip fontawesome.zip -d fontawesome
 # install to system font directory
 sudo cp fontawesome/fontawesome-free-7.2.0-desktop/otfs/* /usr/share/fonts/truetype/
 sudo fc-cache -f -v
-sudo fc-list | grep -i "fontawesome"
+# sudo fc-list | grep -i "fontawesome"
