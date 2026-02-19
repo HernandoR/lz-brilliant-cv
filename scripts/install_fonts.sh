@@ -47,8 +47,8 @@ download_if_missing() {
 # node-fortawesome-fontawesome-free
 # node-fortawesome-fontawesome-svg-core
 
-apt-get update
-apt-get install -y --no-install-recommends \
+sudo apt-get update
+sudo apt-get install -y --no-install-recommends \
   fonts-noto-cjk \
   fonts-firacode \
   fonts-font-awesome
