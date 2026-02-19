@@ -29,8 +29,10 @@ jobs:
       - name: Setup just
         uses: extractions/setup-just@v3
 
-      - name: Install fonts
-        run: just install-fonts
+      - name: setup npm
+        uses: actions/setup-node@v6
+        with:
+          node-version: "latest"
 
       - run: just compile-all
 
