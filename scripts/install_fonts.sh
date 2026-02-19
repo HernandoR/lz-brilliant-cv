@@ -30,4 +30,17 @@ download_if_missing \
   "${FONT_DIR}/FiraCodeNerdFontMono-Regular.ttf" \
   "https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/FiraCode/Regular/FiraCodeNerdFontMono-Regular.ttf"
 
+# https://github.com/FortAwesome/Font-Awesome/blob/7.x/webfonts/fa-brands-400.woff2
+download_if_missing \
+  "${FONT_DIR}/fa-brands-400.woff2" \
+  "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/7.x/webfonts/fa-brands-400.woff2"
+
+download_if_missing \
+  "${FONT_DIR}/fa-regular-400.woff2" \
+  "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/7.x/webfonts/fa-regular-400.woff2"
+
+download_if_missing \
+  "${FONT_DIR}/fa-solid-900.woff2" \
+  "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/7.x/webfonts/fa-solid-900.woff2"
+
 echo "[fonts] installed into ${FONT_DIR}"
